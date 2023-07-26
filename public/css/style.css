@@ -98,31 +98,40 @@
   }
   .main-blog {
   }
-  .main-blog__card {
+  .main-blog-card {
     display: flex;
+    flex-direction: row;
     column-gap: 32px;
     max-width: 1440px;
     padding: 0px 80px 0px 80px;
     margin: auto;
   }
-  .main-blog__image {
+  @media only screen and (max-width: 640px) {
+    body {
+      background-color: #4b1bda;
+    }
+    .main-blog-card {
+      flex-direction: column;
+    }
+  }
+  .main-blog-card__image {
     height: auto;
     object-fit: cover;
   }
-  .main-blog__caption {
+  .main-blog-card__caption {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
   }
-  .main-blog__card-date {
+  .main-blog-card__date {
     color: var(--dark-secondary);
   }
-  .main-blog__card-heading {
+  .main-blog-card__heading {
     font-weight: 500;
     font-size: 48px;
     color: var(--dark-primary);
   }
-  .main-blog__card-desc {
+  .main-blog-card__desc {
     color: var(--dark-primary);
     font-size: 20px;
   }
