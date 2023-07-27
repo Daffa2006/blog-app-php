@@ -17,6 +17,11 @@
           <li><a class="navbar__link" href="#">Contact</a></li>
         </ul>
         <div><a class="btn" href="login.php">Login</a></div>
+          <a  class="hamburger" href="#">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </a>
       </div>
     </nav>
     <main>
